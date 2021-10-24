@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>js-last-exam</title>
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    <main>
+      <section class="users-info-section">
+        <div class="container">
+          <div class="users">
+            <ul class="users__list"></ul>
+          </div>
+          <div class="posts">
+            <ul class="posts__list">
+              <p class="no-messages">no messages</p>
+            </ul>
+          </div>
+          <div class="comments">
+            <ul class="comments__list">
+              <p class="no-messages">no message</p>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <template class="users__item-template">
+      <li class="users__item">
+        <span class="user__id">01</span>
+        <span class="user__user-name">JohnD</span>
+        <h3 class="user__name">John Doe</h3>
+        <div class="user__address">
+          <span class="address__street"> Kulas Light </span>
+          <span class="address__suite"> Apt. 556 </span>
+          <span class="address__city"> Gwenborough </span>
+          <span class="address__zipcode"> 92998-3874 </span>
+        </div>
+        <div class="user__company">
+          <p class="company__name">CityTech</p>
+          <p class="company__catch-phrase">Proactive didactic contingency</p>
+          <p class="company__bs">synergize scalable supply-chains</p>
+        </div>
+        <p class="user__phone">010-692-6593 x09125</p>
+        <div class="links">
+          <span class="address__geo">
+            <a target="_blank" class="geo__link" href="">link</a>
+          </span>
+          <a target="_blank" class="user__website" href="">website</a>
+          <p class="user__email">sample.email@gmail.com</p>
+        </div>
+      </li>
+    </template>
+    <template class="posts__item-template">
+      <li class="posts__item">
+        <h3 class="post__title"></h3>
+        <p class="post__text"></p>
+      </li>
+    </template>
+    <template class="comments__item-template">
+      <li class="comments__item">
+        <h3 class="comments__user-name">John Doe</h3>
+        <span class="comments__user-email">sample.email@gmail.com</span>
+        <p class="comments__user-comment">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse,
+          dolore.
+        </p>
+      </li>
+    </template>
+    <script src="js/main.js"></script>
+  </body>
+</html>
